@@ -1,0 +1,10 @@
+package com.example.demo.Repository;
+
+import org.springframework.data.mongodb.repository.cdi.MongoRepositoryBean;
+import org.springframework.data.mongodb.repository.support.SimpleMongoRepository;
+
+import com.example.demo.Model.Book;
+
+public class BookRepository extends SimpleMongoRepository<Book, Integer> {
+
+}

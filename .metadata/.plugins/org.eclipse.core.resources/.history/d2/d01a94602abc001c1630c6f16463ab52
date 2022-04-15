@@ -1,0 +1,7 @@
+package com.example.demo.Repository;
+
+import org.springframework.data.mongodb.repository.cdi.MongoRepositoryBean;
+
+public class BookRepository extends MongoRepositoryBean<Book,Integer> {
+
+}

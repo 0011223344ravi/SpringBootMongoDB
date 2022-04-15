@@ -1,0 +1,17 @@
+package com.example.demo.Repository;
+
+import org.springframework.data.mongodb.core.MongoOperations;
+import org.springframework.data.mongodb.repository.cdi.MongoRepositoryBean;
+import org.springframework.data.mongodb.repository.query.MongoEntityInformation;
+import org.springframework.data.mongodb.repository.support.SimpleMongoRepository;
+
+import com.example.demo.Model.Book;
+
+public class BookRepository extends SimpleMongoRepository<Book, Integer> {
+
+	public BookRepository(MongoEntityInformation<Book, Integer> metadata, MongoOperations mongoOperations) {
+		super(metadata, mongoOperations);
+		// TODO Auto-generated constructor stub
+	}
+
+}

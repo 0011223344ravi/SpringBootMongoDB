@@ -1,0 +1,23 @@
+package com.example.demo.Resource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.Repository.BookRepository;
+
+@RestController
+public class BookController {
+	
+	@Autowired
+	BookRepository repository;
+	
+	
+	@PostMapping
+	public String saveBook(@RequestBody Book book) {
+		
+		
+	}
+
+}
